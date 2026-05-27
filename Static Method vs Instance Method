@@ -1,0 +1,21 @@
+class Demo {
+
+    static void showStatic() {
+        System.out.println("Static method");
+    }
+
+    void showInstance() {
+        System.out.println("Instance method");
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Demo.showStatic();
+
+        Demo d = new Demo();
+        d.showInstance();
+    }
+}
