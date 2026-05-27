@@ -1,0 +1,26 @@
+class Student {
+
+    int id;
+    String name;
+
+    Student(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+
+public class Main {
+
+    static Student getStudent() {
+
+        return new Student(101, "Manjula");
+    }
+
+    public static void main(String[] args) {
+
+        Student s = getStudent();
+
+        System.out.println(s.id);
+        System.out.println(s.name);
+    }
+}
